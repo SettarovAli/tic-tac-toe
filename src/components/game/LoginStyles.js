@@ -5,8 +5,8 @@ export const StyledForm = styled.form`
   flex-direction: column;
   padding: 4rem 10rem;
 
-  @media (max-width: 768px) {
-    padding: 5rem 2rem;
+  @media (max-width: 480px) {
+    padding: 5rem 4rem;
   }
 
   label {
@@ -14,6 +14,11 @@ export const StyledForm = styled.form`
     font-weight: 600;
     display: block;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 480px) {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
   }
 
   input {
@@ -31,6 +36,12 @@ export const StyledForm = styled.form`
       rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
       rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
       rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+
+    @media (max-width: 480px) {
+      font-size: 4rem;
+      padding: 2rem 4rem;
+      margin-bottom: 4rem;
+    }
   }
 
   input[type='submit'] {
@@ -43,5 +54,9 @@ export const StyledForm = styled.form`
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 0;
+
+    @media (max-width: 480px) {
+      padding: 3rem 4rem;
+    }
   }
 `;

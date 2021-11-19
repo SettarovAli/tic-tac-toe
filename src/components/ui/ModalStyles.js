@@ -13,8 +13,8 @@ export const StyledBackdrop = styled.div`
 export const StyledModal = styled.div`
   position: fixed;
   top: 20vh;
-  left: 5%;
-  width: 90%;
+  width: 60rem;
+  left: calc(50% - 30rem);
   background-color: white;
   padding: 1rem;
   border-radius: 1.4rem;
@@ -22,9 +22,10 @@ export const StyledModal = styled.div`
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 
-  @media (min-width: 768px) {
-    width: 60rem;
-    left: calc(50% - 30rem);
+  @media (max-width: 768px) {
+    left: 5%;
+    width: 90%;
+    height: auto;
   }
 
   @keyframes slide-down {

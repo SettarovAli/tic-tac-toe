@@ -21,6 +21,23 @@ export const StyledCell = styled.button`
   height: 100%;
   width: 100%;
   background-color: #44425e;
+  border: none;
+
+  :nth-child(1) {
+    border-top-left-radius: 1rem;
+  }
+
+  :nth-child(3) {
+    border-top-right-radius: 1rem;
+  }
+
+  :nth-child(7) {
+    border-bottom-left-radius: 1rem;
+  }
+
+  :nth-child(9) {
+    border-bottom-right-radius: 1rem;
+  }
 
   /* TOP */
   :nth-child(2)::before,
